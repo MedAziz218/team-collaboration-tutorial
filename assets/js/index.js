@@ -36,7 +36,7 @@ window.onload = function () {
 
 
     const anim = left.animate([{ width: "100%" }, { width: initial_left_side_width }], {
-        duration: 500, fill: "forwards",
+        duration: 700, fill: "forwards",
         easing: "ease-out"
     })
     anim.onfinish = () => {
