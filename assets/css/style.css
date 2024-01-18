@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@700&display=swap');
 :root {
     --black: #000000;
     --dark: #1D1C18;
@@ -8,12 +9,19 @@
 
 
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+    background-color: var(--dark);
 }
-
+.container {
+    height: 500px;
+    position: relative;
+}
 .side {
-    height: 100vh;
+    height: 100%;
     width:100%;
     display: grid;
     place-items: center;
@@ -39,10 +47,9 @@ body {
 
 #left-side {
     background-color: var(--dark);
-    z-index: 1;
-   
-    
+    z-index: 2;
 }
+
 #right-side {
     background-color: var(--light);
 
@@ -52,6 +59,7 @@ body {
 
 #left-side .title {
     color: var(--light);
+    z-index: 3;
 }
 #left-side .fancy {
     color: var(--yellow);

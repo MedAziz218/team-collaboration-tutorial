@@ -5,21 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to the Team</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@700&display=swap" rel="stylesheet">
 
+    <title>Welcome to the Team</title>
+    <!-- load main script -->
+    <script src="assets/js/main.js"></script>
+    <!-- load css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbarStyle.css">
+    <link rel="stylesheet" href="assets/css/heroStyles.css">
+
+
+    <!-- load jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    
 </head>
 
 <body>
-    <nav>
-   
-    </nav>
-    <div class="container">
+    <header>
+        <a href="#section2">
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav_links">
+
+                <li><a href="team.html" >RobocupEventPortal Team</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="section1"  class="container" style="height: calc(100vh - 70px);">
+
         <div id="left-side" class="side" data-prev="0">
+
             <span>
                 <p class="title">
                     Welcome
@@ -31,7 +48,6 @@
         </div>
 
         <div id="right-side" class="side">
-
             <span>
                 <p class="title">
                     Welcome
@@ -41,10 +57,19 @@
                 </p>
             </span>
         </div>
-    </div>
+    </section>
+    <section id="section2" class="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px; color: var(--yellow); ">Association Robotique Ensi</h1>
+                <p>"In the symphony of technology, we are the composers of progress. Together, we harmonize in the world of robotics."</p>
+
+            </div>
+        </div>
+        
+    </section>
 
 
-    <script src="main.js"></script>
 
 
 </body>
