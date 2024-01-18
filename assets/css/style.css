@@ -1,46 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@700&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+    border-radius: 0px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 0px
+}
+
 :root {
     --black: #000000;
     --dark: #1D1C18;
     --yellow: #E2AC0D;
     --blue: #0d43e2;
-    --light:#E1DBBD;
-    --white:#ffffff;
+    --light: #E1DBBD;
+    --white: #ffffff;
 
 
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     background-color: var(--dark);
 }
+
 .container {
     height: 500px;
     position: relative;
 }
+
 .side {
     height: 100%;
-    width:100%;
+    width: 100%;
     display: grid;
     place-items: center;
     overflow: hidden;
     position: absolute;
 }
+
 .side .title {
-    
+
     font-weight: bold;
     color: white;
     font-family: 'Prompt', sans-serif;
-    font-size: clamp(50px,3vw,500px);
+    font-size: clamp(50px, 3vw, 500px);
     margin: 0px 15vw;
     width: 70vw;
     text-align: center;
 }
+
 .side .fancy {
     font-family: 'Pacifico', cursive;
-    font-size: clamp(50px,3vw,500px);
+    font-size: clamp(50px, 3vw, 500px);
     line-height: 0.8em;
     font-weight: normal;
 }
@@ -61,6 +82,7 @@ body {
     color: var(--light);
     z-index: 3;
 }
+
 #left-side .fancy {
     color: var(--yellow);
 }
@@ -68,12 +90,15 @@ body {
 #right-side .title {
     color: var(--dark);
 }
+
 #right-side .fancy {
     color: var(--blue);
 }
 
 @media (max-width: 480px) {
-.side .title, .side .fancy {
-    font-size: clamp(30px,3vw,500px);
-}
+
+    .side .title,
+    .side .fancy {
+        font-size: clamp(30px, 3vw, 500px);
+    }
 }
