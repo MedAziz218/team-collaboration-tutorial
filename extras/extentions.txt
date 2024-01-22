@@ -1,0 +1,10 @@
+Prettier - Code formatter
+Auto Rename Tag (Jun Han)
+Auto Complete Tag (Jun Han)
+Stylelint (Stylelint)
+ESLint (Microsoft)
+Color Highlight (Sergii N)
+
+Live Server (Ritwick Dey)
+Toggle Column Selection (Erik P. Hansen)
+file-icons (file-icons)
